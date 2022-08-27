@@ -23,7 +23,6 @@ export class AdminPanelComponent implements OnInit {
     private productService: ProductsService,
     private router:Router
   ) {
-    
   }
 
   ngOnInit(): void {
