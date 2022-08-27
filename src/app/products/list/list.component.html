@@ -16,46 +16,13 @@
             </div>
             <div class="product-cards container-sm">
                 <div class="row">
-                    <div class="card-col col-sm-4 col-sm-offset-2">
+                    <div class="card-col col-sm-4 col-sm-offset-2" *ngFor="let product of products;">
                         <div class="card">
-                            <img class="card-img-top" src="https://m.media-amazon.com/images/I/61mtuZCcUdL._SL1500_.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="{{product.getImageURL()}}" alt="Card image cap">
                             <div class="card-body">
-                              <h5 class="card-title">Zebronics DRIP Smart Watch with Bluetooth Calling, 4.3cm (1.69"), ...</h5>
-                              <b class="card-price">2500</b>&nbsp;
-                              <i class="card-currency">INR</i><br>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-col col-sm-4 col-sm-offset-2">
-                        <div class="card">
-                            <img class="card-img-top" src="https://m.media-amazon.com/images/I/61mtuZCcUdL._SL1500_.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Zebronics DRIP Smart Watch with Bluetooth Calling, 4.3cm (1.69"), ...</h5>
-                              <b class="card-price">2500</b>&nbsp;
-                              <i class="card-currency">INR</i><br>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-col col-sm-4 col-sm-offset-2">
-                        <div class="card">
-                            <img class="card-img-top" src="https://m.media-amazon.com/images/I/61mtuZCcUdL._SL1500_.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Zebronics DRIP Smart Watch with Bluetooth Calling, 4.3cm (1.69"), ...</h5>
-                              <b class="card-price">2500</b>&nbsp;
-                              <i class="card-currency">INR</i><br>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-col col-sm-4 col-sm-offset-2">
-                        <div class="card">
-                            <img class="card-img-top" src="https://m.media-amazon.com/images/I/61mtuZCcUdL._SL1500_.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Zebronics DRIP Smart Watch with Bluetooth Calling, 4.3cm (1.69"), ...</h5>
-                              <b class="card-price">2500</b>&nbsp;
-                              <i class="card-currency">INR</i><br>
+                              <h5 class="card-title">{{ product.getName() | truncate:70 }}</h5>
+                              <b class="card-price">{{ product.getPrice() }}</b>&nbsp;
+                              <i class="card-currency">{{ product.getCurency() }}</i><br>
                               <a href="#" class="btn btn-primary" style="width: 100%; margin: 0.5rem 0;">Buy Now</a>
                               <a href="#" class="btn btn-sm btn-outline-primary" style="width: 100%; margin: 0.5rem 0;">Add to cart</a>
                             </div>

@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'hadiya_products'`, () => {
+  it(`should have as title 'hadiya_products_admin'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('hadiya_products');
+    expect(app.title).toEqual('hadiya_products_admin');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('hadiya_products app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('hadiya_products_admin app is running!');
   });
 });
