@@ -4,7 +4,7 @@
 
 Update the following line in ```src/environments/environment.prod.ts```
 
-apiGatewayURL = 'http://<HOSTNAME>:<PORT>'
+apiGatewayURL = 'http://\<HOSTNAME\>:\<PORT\>'
 
 **NOTE: DO NOT ADD TRAILING SLASH '/' AT THE END OF THE ABOVE ENDPOINT**
 
