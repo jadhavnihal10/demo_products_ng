@@ -2,6 +2,8 @@
 
 ## Environment variables
 
+Update the following line in ```src/environments/environment.prod.ts```
+
 apiGatewayURL = \<YOUR_BACKEND_API_GATEWAY_URL\>
 
 ## Development server
